@@ -5,16 +5,22 @@
   box-sizing: border-box;
   font-family: "Public Sans", sans-serif;
 }
-
+body{
+    overflow-x: hidden;
+}
 .box-0{
     width: 100%;
     height: 100px;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 99;
+
 }
 .box-0-1{
-    padding-left: 150px;
+    padding-left: 10%;
 }
 
 .box-0-2 .nav{
@@ -54,14 +60,14 @@
 .box-0-3{
     padding-right: 150px;
 }
-.box-0-3 button{
+.button{
     color: hsl(0, 0%, 100%) ;
     border: none;
     padding: 15px 40px;
     border-radius: 30px;
     background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
 }
-.box-0-3 button:hover{
+.button:hover{
     background: linear-gradient(to right, hsl(136, 52%, 65%), hsl(192, 61%, 63%));
 }
 
@@ -88,9 +94,62 @@
     width: 40px;
 }
 /* //§§ */
-@media (max-width:1020px) {.box-0-3{display: none;}.box-0-2{padding-right: 2%;}.box-0-1{padding-left: 4%;}}
 
-@media (max-width:620px){
+.box-1{
+    background-color: hsl(0, 0%, 98%);
+    width: 100%;
+    height: 900px;
+    display: flex;
+}
+.box-1 .box-1-1{
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    padding: 10%;
+}
+.box-1 .box-1-1 h2{
+    font-size: 60px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+.box-1 .box-1-1 p{
+    font-size: 18px;
+    padding-bottom: 30px;
+    color: hsl(233, 8%, 62%);
+}
+.box-1-2{
+    width:50%;
+    height: 100%;
+    background-image: url(images/bg-intro-desktop.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 113rem;
+    background-position: -90px 53%;
+    z-index: 1;
+}
+
+.box-1-2 div{
+    width: 100%;
+    height: 100%;
+}
+
+.box-1-2 div img{
+    width: 60rem;
+    position: relative;
+    left: 8.6rem;
+    top: 12px;
+}
+
+
+
+
+@media (max-width:1020px) {.box-0-3{display: none;}.box-0-2{padding-right: 10%;}.box-0-1{padding-left:10%;}}
+
+@media (max-width:670px){
     .btnd{
         display: block;
     }
