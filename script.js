@@ -17,3 +17,4 @@ Close.addEventListener("click", () => {
     Open.style.display = "block";
     body.classList.remove('body')
   });
+  
