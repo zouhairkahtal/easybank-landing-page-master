@@ -173,7 +173,7 @@ h3 {
 }
 .box-2-1 p {
   font-size: 18px;
-  color: var(--color-background-light);
+  color: var(--color-gray-light);
 }
 .box-2-2 {
   display: flex;
